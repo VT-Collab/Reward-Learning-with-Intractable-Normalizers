@@ -11,3 +11,9 @@ Requirements can be installed using pip:
     
 ## Instructions
 To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 1000 run test summing the total error for each normalizer approximation of theta.
+
+You can also provide arguments to adjust the run parameters of the code:
+
+--runs: changes the number of runs that the errors are summed over. Default is 1000
+--outer: changes the number of outer sample loops are used to sample for different beliefs for an ideal human action.
+--inner: changes the number of inner sample loops are used to find the normalizers for each approach
