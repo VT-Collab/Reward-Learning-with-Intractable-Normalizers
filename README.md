@@ -16,6 +16,6 @@ You can also provide arguments to adjust the run parameters of the code:
 
 --runs: changes the number of runs that the errors are summed over. Default is 1000
 
---outer: changes the number of outer sample loops are used to sample for different beliefs for an ideal human action.
+--outer: changes the number of outer sample loops are used to sample for different beliefs for an ideal human action. Default is 1000
 
---inner: changes the number of inner sample loops are used to find the normalizers for each approach
+--inner: changes the number of inner sample loops are used to find the normalizers for each approach. Default is 50
