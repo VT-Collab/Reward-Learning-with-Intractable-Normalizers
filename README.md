@@ -1,5 +1,5 @@
 # Reward Learning with Intractable Normalizing Functions
-This is a repository for our paper, "Reward Learning with Intractable Normalizing Functions". We include:
+This is a repository for our paper, ["Reward Learning with Intractable Normalizing Functions"](https://collab.me.vt.edu/pdfs/josh_ral23.pdf). We include:
 - Implementation of basic enviroment implementation of all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions.
 
 ## Requirements
