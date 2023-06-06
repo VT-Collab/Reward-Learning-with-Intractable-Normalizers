@@ -10,4 +10,4 @@ Requirements can be installed using pip:
     pip install -r requirements.txt
     
 ## Instructions
-    To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 1000 run test summing the total error for each normalizer approximation of theta.
+To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 1000 run test summing the total error for each normalizer approximation of theta.
