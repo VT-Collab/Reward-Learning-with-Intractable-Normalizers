@@ -4,7 +4,7 @@ This is a repository for our paper, ["Reward Learning with Intractable Normalizi
 - Implementation of a basic environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions.
 - Implementation of a Panda Robot environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions 
   in a comparable setting to User Study Setting.
-- Implementation of wider implementation used within the real-world user study for the Franka Panda robot.
+- Showcase of the wider implementation used within the real-world user study for the Franka Panda robot.
   
 ## Requirements
 Requirements are listed in requirements.txt:
@@ -16,7 +16,7 @@ Requirements are listed in requirements.txt:
 Requirements can be installed using pip:
 
     pip install -r requirements.txt
-## Instructions - Toy Sim
+## Instructions - Working Example
 To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 1000 run test summing the total error for each normalizer approximation of theta.
 
 You can also provide arguments to adjust the run parameters of the code:
