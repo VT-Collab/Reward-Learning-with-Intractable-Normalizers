@@ -27,12 +27,12 @@ You can also provide arguments to adjust the run parameters of the code:
 --inner: changes the number of inner sample loops are used to find the normalizers for each approach. Default is 50
 
 ## Instructions - Panda_Sims
-To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 100 run test summing the total error for each normalizer approximation of theta.
+To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 100 run test summing the total error for each normalizer approximation of theta. If you want a graphical representation of the error and regret metrics afterward, run 'python plotter.py'.
 
 You can also provide arguments to adjust the run parameters of the code:
 
 --runs: changes the number of runs that the errors are summed over. Default is 100
 
---outer: changes the number of outer sample loops are used to sample for different beliefs for an ideal human action. Default is 1000
+--outer: changes the number of outer sample loops are used to sample for different beliefs for an ideal human action. Default is 50
 
---inner: changes the number of inner sample loops are used to find the normalizers for each approach. Default is 50
+--inner: changes the number of inner sample loops are used to find the normalizers for each approach. Default is 10
