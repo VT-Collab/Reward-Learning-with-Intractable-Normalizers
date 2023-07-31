@@ -4,7 +4,7 @@ This is a repository for our paper, ["Reward Learning with Intractable Normalizi
 - Implementation of a basic environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions.
 - Implementation of a Panda Robot environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions 
   in a comparable setting to User Study Setting.
-- Implementation of wider implementation used within the real-world user study for the Franka Panda robot.
+- Showcase of the wider implementation used within the real-world user study for the Franka Panda robot.
   
 ## Requirements
 Requirements are listed in requirements.txt:
