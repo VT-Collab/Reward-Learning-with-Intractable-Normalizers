@@ -1,9 +1,10 @@
 # Reward Learning with Intractable Normalizing Functions
 This is a repository for our paper, ["Reward Learning with Intractable Normalizing Functions"](https://collab.me.vt.edu/pdfs/josh_ral23.pdf). We include:
-- Implementation of a basic environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions.
 - Implementation of a Panda Robot environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions 
-  in a comparable setting to User Study Setting.
+  in a comparable setting to the User Study Setting.
   
+## Panda Sim Environment
+This is a simulation made to isolate the mathematical basis for the sampling methods to measure their time requirements outside of the use of internal factors like pybullet environment sampling used in the practical Panda_Env simulations. Within this is the 3 different simulations
 
 ## Requirements
 Requirements are listed in requirements.txt:
@@ -17,7 +18,7 @@ Requirements can be installed using pip:
     pip install -r requirements.txt
 
 ## Instructions - Panda_Sims
-To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 100 run test summing the total error for each normalizer approximation of theta. If you want a graphical representation of the error and regret metrics afterward, run 'python plotter.py'.
+To run a demonstration of a set of the normalizer runs for each individual simulation, run `python main.py`. The initial settings define an initial 100-run test summing the total error for each normalizer approximation of theta. If you want a graphical representation of the error and regret metrics afterward, run 'python plotter.py'.
 
 You can also provide arguments to adjust the run parameters of the code:
 
