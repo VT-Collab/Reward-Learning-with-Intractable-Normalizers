@@ -15,12 +15,23 @@ Requirements are listed in requirements.txt:
 Requirements can be installed using pip:
 
     pip install -r requirements.txt
-## Instructions
+## Instructions - Toy Sim
 To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 1000 run test summing the total error for each normalizer approximation of theta.
 
 You can also provide arguments to adjust the run parameters of the code:
 
 --runs: changes the number of runs that the errors are summed over. Default is 1000
+
+--outer: changes the number of outer sample loops are used to sample for different beliefs for an ideal human action. Default is 1000
+
+--inner: changes the number of inner sample loops are used to find the normalizers for each approach. Default is 50
+
+## Instructions - Panda_Sims
+To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 100 run test summing the total error for each normalizer approximation of theta.
+
+You can also provide arguments to adjust the run parameters of the code:
+
+--runs: changes the number of runs that the errors are summed over. Default is 100
 
 --outer: changes the number of outer sample loops are used to sample for different beliefs for an ideal human action. Default is 1000
 
