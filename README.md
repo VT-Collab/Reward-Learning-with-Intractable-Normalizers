@@ -1,9 +1,10 @@
 # Reward Learning with Intractable Normalizing Functions
-This is a repository for our paper, ["Reward Learning with Intractable Normalizing Functions"](https://collab.me.vt.edu/pdfs/josh_ral23.pdf). We include:
-- Implementation of a basic environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions.
-- Implementation of a Panda Robot environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions 
-  in a comparable setting to User Study Setting.
+This is a repository for our paper, ["Reward Learning with Intractable Normalizing Functions"](https://collab.me.vt.edu/pdfs/josh_ral23.pdf). 
+
+
   
+## Toy Environment
+This is a simulation made to isolate the mathematical basis for the sampling methods to measure their time requirements outside of the use of internal factors like pybullet environment sampling used in the practical Panda_Env simulations.
 
 ## Requirements
 Requirements are listed in requirements.txt:
