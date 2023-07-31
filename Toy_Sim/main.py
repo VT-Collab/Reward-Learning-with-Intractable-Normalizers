@@ -16,7 +16,7 @@ def main():
 	n_runs = args.runs #Number of total runs
 	n_outer_samples = args.outer #Number of outer samples to generate random samples of comparison for theta
 	n_inner_samples = args.inner #Number of inner samples to generate relevant normalizers
-	n_burn = np.int8(round(n_inner_samples/2,0)) #Number of burned samples from initial sampling
+	n_burn = np.int8(round(n_outer_samples/2,0)) #Number of burned samples from initial sampling
    
 
 	# performance parameters

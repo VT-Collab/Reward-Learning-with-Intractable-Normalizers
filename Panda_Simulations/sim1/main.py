@@ -2,14 +2,20 @@ from env_1 import Env1
 from algos import *
 import numpy as np
 import pickle
+import argparse
 
-
+# args parse for run parameters
+parser = argparse.ArgumentParser()
+parser.add_argument('--runs', type=int, default=100)
+parser.add_argument('--outer', type=int, default=50)
+parser.add_argument('--inner', type=int, default=10)
+args = parser.parse_args()
 # run parameters
-n_runs = 100
+n_runs = args.runs
 n_demos = 3
-n_outer_samples = 50
-n_inner_samples = 25
-n_burn = 25
+n_outer_samples = args.outer
+n_inner_samples = args.inner
+n_burn = np.int8(round(n_outer_samples/2,0)) #Number of burned samples from initial sampling
 
 # trajectory parameters
 start_position = np.array([0.4, 0.0, 0.5])
