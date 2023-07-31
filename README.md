@@ -16,7 +16,7 @@ Requirements are listed in requirements.txt:
 Requirements can be installed using pip:
 
     pip install -r requirements.txt
-## Instructions - Toy Sim
+## Instructions - Working Example
 To run a demonstration of the normalizer runs, run `python main.py`. The initial settings define an initial 1000 run test summing the total error for each normalizer approximation of theta.
 
 You can also provide arguments to adjust the run parameters of the code:
