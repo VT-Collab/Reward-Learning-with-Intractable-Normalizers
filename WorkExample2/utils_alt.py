@@ -17,14 +17,14 @@ def reward(position, theta, beta=50.0):
 
 def Qfun(state,a_h,theta): 
     pos2 = np.array(state) + np.array(a_h)
-    Rcurr = reward(pos2,theta)
+    #Rcurr = reward(pos2,theta)
     #V = 100
-    ideal = ( ( ((2*theta[0])*goal1) + ((theta[1])*goal2) ) / (theta[0]+theta[1]) ) #ideal position approximation
+    ideal = ( ( ((2*theta[0])*goal1) + ((theta[1])*goal2) ) / (theta[0]+theta[1]) ) #ideal position 
     act2 = np.array(ideal-state)*.2
     pos3 = np.array(pos2)+np.array(act2)
-    V = reward(pos3,theta)
+    Q = reward(pos3,theta)
 
-    Q = Rcurr + V
+    #Q = Rcurr + V
     return Q
 
 
