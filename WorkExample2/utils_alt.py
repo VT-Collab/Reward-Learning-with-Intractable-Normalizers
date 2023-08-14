@@ -10,7 +10,7 @@ goal2 = np.array([0.9,0.50])
 
 # compute the number line reward
 def reward(position, theta, beta=50.0): 
-    dist1 = np.linalg.norm([abs(position[0] - goal1[0]),abs(position[1] - goal1[1])])*2
+    dist1 = np.linalg.norm([abs(position[0] - goal1[0]),abs(position[1] - goal1[1])])
     dist2 = np.linalg.norm([abs(position[0] - goal2[0]),abs(position[1] - goal2[1])])
     f = -theta[0] * dist1 - theta[1] * dist2
     return np.exp(beta * f)
