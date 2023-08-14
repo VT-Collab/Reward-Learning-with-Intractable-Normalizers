@@ -23,8 +23,8 @@ def Qfun(state,a_h,theta):
     #act2 = np.array(ideal-state)*.2
 
     #position = np.array(pos2)+np.array(act2) #Second state modification
-    dist1 = np.linalg.norm([abs(position[0] - goal1[0]),abs(position[1] - goal1[1])])
-    dist2 = np.linalg.norm([abs(position[0] - goal2[0]),abs(position[1] - goal2[1])])
+    dist1 = np.linalg.norm([abs(position[0] - goal1[0]),abs(position[1] - goal1[1])])**2
+    dist2 = np.linalg.norm([abs(position[0] - goal2[0]),abs(position[1] - goal2[1])])**2
     f = -theta[0] * dist1 - theta[1] * dist2
     Q = np.exp(50.0 * f)
 
