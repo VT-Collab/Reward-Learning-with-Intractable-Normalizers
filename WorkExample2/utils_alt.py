@@ -1,6 +1,6 @@
 import numpy as np
 
-#The enviroment in this code is just a belief of where a marker should be in between two goals (1 and 2)
+#The environment in this code is just a belief of where a marker should be in between two goals (1 and 2)
 #Where the user has a belief of how much to value the distance from each goal relative to the marker.
 
 # parameters of environment
@@ -16,17 +16,20 @@ def reward(position, theta, beta=50.0):
     return np.exp(beta * f)
 
 def Qfun(state,a_h,theta): 
-    pos2 = np.array(state) + np.array(a_h)
+    position = np.array(state) + np.array(a_h) #Base to first state modification
     #Rcurr = reward(pos2,theta)
     #V = 100
-    ideal = ( ( ((2*theta[0])*goal1) + ((theta[1])*goal2) ) / (theta[0]+theta[1]) ) #ideal position 
-    act2 = np.array(ideal-state)*.2
-    pos3 = np.array(pos2)+np.array(act2)
-    Q = reward(pos3,theta)
+    #ideal = ( ( ((2*theta[0])*goal1) + ((theta[1])*goal2) ) / (theta[0]+theta[1]) ) #ideal position 
+    #act2 = np.array(ideal-state)*.2
+
+    #position = np.array(pos2)+np.array(act2) #Second state modification
+    dist1 = np.linalg.norm([abs(position[0] - goal1[0]),abs(position[1] - goal1[1])])
+    dist2 = np.linalg.norm([abs(position[0] - goal2[0]),abs(position[1] - goal2[1])])
+    f = -theta[0] * dist1 - theta[1] * dist2
+    Q = np.exp(50.0 * f)
 
     #Q = Rcurr + V
     return Q
-
 
 # generate a random position
 def rand_action():
