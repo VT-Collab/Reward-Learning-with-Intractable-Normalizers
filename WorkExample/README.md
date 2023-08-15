@@ -3,8 +3,8 @@ This is a repository for our paper, ["Reward Learning with Intractable Normalizi
 - Implementation of a basic environment showcasing all normalizers mentioned in the paper for test and comparison of normalizer performance under different sampling conditions. 
 
 
-## Toy Environment
-Hello, this is a simulation made to isolate the mathematical basis for the sampling methods to measure their time requirements outside of the use of internal factors like pybullet environment sampling used in the practical Panda_Env simulations.
+## Working Environment 1
+Hello, this is a simulation made to isolate the mathematical basis for the sampling methods to measure their time requirements outside of the use of internal factors like pybullet environment sampling used in the practical Panda_Env simulations. The environment rendered just represents a belief of where a marker should be in between two goals (1 and 2) where the user has a belief of how much to value the distance from each goal relative to the marker where the agent has to take an action to represent their belief.
 ## Requirements
 Requirements are listed in requirements.txt:
 - python3
