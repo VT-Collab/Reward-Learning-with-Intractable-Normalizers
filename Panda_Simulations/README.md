@@ -29,7 +29,7 @@ You can also provide arguments to adjust the run parameters of the code:
 --inner: changes the number of inner sample loops are used to find the normalizers for each approach. Default is 25
 
 ## Basic Results
-Here are an example set of results for running each of the simulations with default parameters. As you all can see, for the push simulation, the error is all fairly low given the simulation's low dimensional requirements allowing all to achieve fairly applicable results. However, as you expand the feature dimensions and action space as you would for the close and pour simulations, the results for the Ignore method quickly become unreliable. 
+Here are an example set of results for running each of the simulations with default parameters. As you all can see, for the push simulation, the error is all fairly low given the simulation's low dimensional requirements allowing all to achieve fairly applicable results. However, as you expand the feature dimensions and action space as you would for the close and pour simulations, the results for the Ignore method quickly become unreliable despite increased sampling loops where the other methods continue to scale. 
 
 ![ErrorSim1](https://github.com/VT-Collab/Reward-Learning-with-Intractable-Normalizers/assets/112197239/3dfa46e8-0e6a-4b90-ac14-39adbd1d4bf4)
 ![RegretSim1](https://github.com/VT-Collab/Reward-Learning-with-Intractable-Normalizers/assets/112197239/70e14886-dd9a-4f74-a0d3-779beb47415b)
